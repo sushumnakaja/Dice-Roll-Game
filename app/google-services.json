@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "852758966579",
+    "firebase_url": "https://dice-roll-game.firebaseio.com",
+    "project_id": "dice-roll-game",
+    "storage_bucket": "dice-roll-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852758966579:android:82a557ec0fd4820bbbce46",
+        "android_client_info": {
+          "package_name": "com.example.dicerollgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852758966579-h7ge3c49d30ghp8506dn1a27q5pm0nbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dicerollgame",
+            "certificate_hash": "7d94f3caca334ec4541de400161e6b0e69033465"
+          }
+        },
+        {
+          "client_id": "852758966579-hln3gqvngt73td787sd5p2or130as4dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtdW_4IvGTRW-g_fIRbmLB1B48dzU_1Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852758966579-hln3gqvngt73td787sd5p2or130as4dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
