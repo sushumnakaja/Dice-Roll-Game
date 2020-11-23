@@ -54,8 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void Continue(View v){
 
-        Toast.makeText(this, "You cliked continue", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "You cliked continue", Toast.LENGTH_SHORT).show();
          saveNames();
+
+        Intent intent3 = new Intent(this,Activity3.class);
+
+        startActivity(intent3);
+
     }
 
 
