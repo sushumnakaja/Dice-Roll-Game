@@ -10,9 +10,92 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="274dp"
-        android:text="Game play begins"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Your Score : "
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Roll_dice"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:onClick="buttonRoll"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textViewtextRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:text="Roll the dice"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Roll_dice" />
+
+    <TextView
+        android:id="@+id/textViewGameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="206dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginRight="205dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_gamedone"
+        android:layout_width="166dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:onClick="openNewActivity"
+        android:text="continue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewtextRoll"
+        tools:visibility="invisible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

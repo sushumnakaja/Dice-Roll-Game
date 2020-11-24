@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
          saveNames();
 
         Intent intent3 = new Intent(this,Activity3.class);
-
         startActivity(intent3);
 
     }
