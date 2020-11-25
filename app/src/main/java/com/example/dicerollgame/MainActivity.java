@@ -20,7 +20,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String KEY1 = "Player Name";
+    public static final String KEY_Name = "Player Name";
 
 
     EditText editTextPlayer1;
@@ -54,8 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void Continue(View v){
 
-        Toast.makeText(this, "You cliked continue", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "You cliked continue", Toast.LENGTH_SHORT).show();
          saveNames();
+
+        Intent intent3 = new Intent(this,Activity3.class);
+        startActivity(intent3);
+
     }
 
 
@@ -64,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Map<String, Object> note = new HashMap<>();
-        note.put(KEY1 , name1);
+        note.put(KEY_Name , name1);
 
 
         Fdatabase.collection("Dice").document("Dice info").set(note)
